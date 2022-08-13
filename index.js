@@ -13,7 +13,7 @@ function makeDivs() {
 const gridRange = document.querySelector("#inputRange");
 //grid creation base on event listener
 gridRange.addEventListener("click", () => {
-  //12x12 grid size
+  //15x15 grid size
   clearFunc();
   if (gridRange.value == 12) {
     let divCount = 225;
@@ -41,9 +41,9 @@ gridRange.addEventListener("click", () => {
       });
     });
 
-    //end of 12x12 grid function
+    //end of 15x15 grid function
   } else if (gridRange.value == 15) {
-    //15x15 grid size
+    //50x50 grid size
     clearFunc();
     let divCount = 2500;
     for (i = 1; i <= divCount; i++) {
@@ -59,7 +59,7 @@ gridRange.addEventListener("click", () => {
     submitColor.addEventListener("click", () => {
       const userColor = userSelector.value;
       for (let box of boxDivs2) {
-        box.addEventListener("mouseover", () => {
+        box.addEventListener("click", () => {
           box.style.backgroundColor = userColor;
         });
       }
@@ -69,9 +69,9 @@ gridRange.addEventListener("click", () => {
         }
       });
     });
-    //end of 15x15 grid function
+    //end of 50x50 grid function
   } else if (gridRange.value == 9) {
-    // 9x9 grid size
+    // 12x12 grid size
     clearFunc();
     let divCount = 144;
     for (i = 1; i <= divCount; i++) {
@@ -97,7 +97,7 @@ gridRange.addEventListener("click", () => {
         }
       });
     });
-    //end of 9x9 grid function
+    //end of 12x12 grid function
   }
 });
 

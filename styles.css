@@ -83,6 +83,16 @@ select {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 2;
+  position: absolute;
+}
+#BIRDS {
+  margin-top: 50px;
+  position: absolute;
+  z-index: 1;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 80px;
 }
 /* a row of the color selector and the game screen */
 #ui {
@@ -130,8 +140,8 @@ select {
 
 /* game header styling */
 #gameHeader {
-  background-image: linear-gradient(to left, grey, black);
-  color: transparent;
+  background-image: linear-gradient(to left, black, black);
+  color: black;
   background-clip: text;
   -webkit-background-clip: text;
   font-size: 3.5rem;
@@ -139,7 +149,7 @@ select {
   font-weight: 600;
 }
 #gameHeader:hover {
-  background-image: linear-gradient(to right, grey 45%, black);
+  color: blueviolet;
 }
 .gameBlocks {
   height: 50px;
