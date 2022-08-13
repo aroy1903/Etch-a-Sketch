@@ -148,9 +148,6 @@ select {
   font-family: "Oswald", sans-serif;
   font-weight: 600;
 }
-#gameHeader:hover {
-  color: blueviolet;
-}
 .gameBlocks {
   height: 50px;
   width: 50px;
