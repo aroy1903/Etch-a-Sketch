@@ -41,7 +41,6 @@ gridRange.addEventListener("click", () => {
       });
     });
 
-    console.dir(boxDivs);
     //end of 12x12
   } else if (gridRange.value == 15) {
     // range of 15x15 for grid size
@@ -70,7 +69,7 @@ gridRange.addEventListener("click", () => {
         }
       });
     });
-    console.dir(boxDivs2);
+
     //end of 15x15
   } else if (gridRange.value == 9) {
     // range of 9x9 for grid size
@@ -99,7 +98,7 @@ gridRange.addEventListener("click", () => {
         }
       });
     });
-    console.dir(boxDivs1);
+
     //end of 9x9
   }
 });
