@@ -156,6 +156,12 @@ select {
   display: flex;
   justify-content: space-between;
 }
+.displayHeader {
+  margin-right: 20px;
+}
+.displayHeader:last-child {
+  margin-right: 0;
+}
 /* grid size */
 #gridForm {
   margin-top: 50px;

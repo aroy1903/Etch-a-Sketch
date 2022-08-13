@@ -13,19 +13,19 @@ function makeDivs() {
 const gridRange = document.querySelector("#inputRange");
 
 gridRange.addEventListener("click", () => {
-  //range of 12x12 grid size
+  //12x12 grid size
   clearFunc();
   if (gridRange.value == 12) {
-    let divCount = 144;
+    let divCount = 225;
     for (i = 1; i <= divCount; i++) {
       makeDivs();
     }
     const boxDivs = document.querySelectorAll(".gameBlocks");
-    gameScreen.style.height = "790px";
+    gameScreen.style.height = "760px";
     for (let box of boxDivs) {
-      box.style.height = "65px";
-      box.style.width = "65px";
-      box.style.flex = "1 1 65px";
+      box.style.height = "50px";
+      box.style.width = "50px";
+      box.style.flex = "1 1 50px";
     }
     submitColor.addEventListener("click", () => {
       const userColor = userSelector.value;
@@ -41,20 +41,20 @@ gridRange.addEventListener("click", () => {
       });
     });
 
-    //end of 12x12
+    //end of 12x12 grid function
   } else if (gridRange.value == 15) {
-    // range of 15x15 for grid size
+    //15x15 grid size
     clearFunc();
-    let divCount = 225;
+    let divCount = 2500;
     for (i = 1; i <= divCount; i++) {
       makeDivs();
     }
     const boxDivs2 = document.querySelectorAll(".gameBlocks");
-    gameScreen.style.height = "760px";
+    gameScreen.style.height = "785px";
     for (let box of boxDivs2) {
-      box.style.height = "50px";
-      box.style.width = "50px";
-      box.style.flex = "1 1 50px";
+      box.style.height = "15.5px";
+      box.style.width = "15.5px";
+      box.style.flex = "1 1 15.5px";
     }
     submitColor.addEventListener("click", () => {
       const userColor = userSelector.value;
@@ -69,21 +69,20 @@ gridRange.addEventListener("click", () => {
         }
       });
     });
-
-    //end of 15x15
+    //end of 15x15 grid function
   } else if (gridRange.value == 9) {
-    // range of 9x9 for grid size
+    // 9x9 grid size
     clearFunc();
-    let divCount = 81;
+    let divCount = 144;
     for (i = 1; i <= divCount; i++) {
       makeDivs();
     }
     const boxDivs1 = document.querySelectorAll(".gameBlocks");
-    gameScreen.style.height = "730px";
+    gameScreen.style.height = "790px";
     for (let box of boxDivs1) {
-      box.style.height = "80px";
-      box.style.width = "80px";
-      box.style.flex = "1 1 80px";
+      box.style.height = "65px";
+      box.style.width = "65px";
+      box.style.flex = "1 1 65px";
     }
     submitColor.addEventListener("click", () => {
       const userColor = userSelector.value;
@@ -98,12 +97,10 @@ gridRange.addEventListener("click", () => {
         }
       });
     });
-
-    //end of 9x9
+    //end of 9x9 grid function
   }
 });
 
 function clearFunc() {
   gameScreen.innerHTML = "";
 }
-// make a 7x7 grid with flexbox of divs
