@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch a Sketch</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <h1 id="gameHeader">Etch A Sketch</h1>
+      <div id="ui">
+        <div id="colorSelector">
+          <h1 id="mainHeader">Controls</h1>
+          <div id="colorInput">
+            <input type="color" id="userColor" />
+            <button id="submitColor">Select Color</button>
+          </div>
+          <button id="clearButton">Clear Screen</button>
+          <div id="gridForm">
+            <div class="container">
+              <label for="inputRange" class="form-label">Grid Size:</label>
+              <input
+                type="range"
+                class="form-range"
+                min="9"
+                max="15"
+                step="3"
+                id="inputRange"
+              />
+              <div id="gameRange">
+                <h4>9x9</h4>
+                <h4>12x12</h4>
+                <h4>15x15</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="gameScreen">
+          <h1 id="gameSize">Choose a Grid Size!</h1>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
