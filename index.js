@@ -11,7 +11,7 @@ function makeDivs() {
 }
 
 const gridRange = document.querySelector("#inputRange");
-
+//grid creation base on event listener
 gridRange.addEventListener("click", () => {
   //12x12 grid size
   clearFunc();

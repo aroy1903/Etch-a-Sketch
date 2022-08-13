@@ -156,6 +156,7 @@ select {
   display: flex;
   justify-content: space-between;
 }
+/* header for range value bar */
 .displayHeader {
   margin-right: 20px;
 }
